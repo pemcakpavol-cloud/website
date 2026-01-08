@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuMind – osobný manažér dokumentov</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <span>DocuMind</span>
+    </div>
+    <nav class="menu">
+        <a href="index.html">Úvod</a>
+        <a href="o-aplikacii.html">O aplikácii</a>
+        <a href="funkcie.html">Funkcie</a>
+        <a href="tym.html">O nás</a>
+        <a href="stiahnutie.html">Stiahnuť</a>
+    </nav>
+</header>
+
+<section class="intro">
+    <h1>Vitajte na našom projekte</h1>
+    <p>
+        DocuMind je mobilná aplikácia využívajúca umelú inteligenciu
+        na správu dokumentov a zmlúv.
+    </p>
+</section>
+
+<section class="projects">
+    <h2 class="section-title">DocuMind</h2>
+
+    <div class="project-grid">
+
+        <div class="project" onclick="window.location.href='o-aplikacii.html'">
+            <div class="project-image">
+                <img src="resources/images/aplikacia.png" alt="O aplikácii DocuMind">
+            </div>
+            <div class="project-info">
+                <h3>O aplikácii</h3>
+                <p>
+                    Základné informácie o aplikácii DocuMind
+                    a jej hlavnom zameraní.
+                </p>
+            </div>
+        </div>
+
+        <div class="project" onclick="window.location.href='funkcie.html'">
+            <div class="project-image">
+                <img src="resources/images/funkcie.jpg" alt="Funkcie aplikácie">
+            </div>
+            <div class="project-info">
+                <h3>Funkcie</h3>
+                <p>
+                    AI skenovanie dokumentov, automatické pripomienky
+                    a inteligentné kategórie.
+                </p>
+            </div>
+        </div>
+
+        <div class="project" onclick="window.location.href='stiahnutie.html'">
+            <div class="project-image">
+                <img src="resources/images/stiahnutie.jpg" alt="Stiahnuť aplikáciu">
+            </div>
+            <div class="project-info">
+                <h3>Stiahnutie</h3>
+                <p>
+                    Informácie o stiahnutí aplikácie
+                    pre Android a iOS.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="approach">
+    <h2>Náš Prístup</h2>
+    <p>
+        V našej práci kombinujeme kreativitu, technológiu a dôkladné plánovanie.
+        Veríme, že každý projekt má svoj jedinečný potenciál.
+    </p>
+    <ul>
+        <li><strong>Inovácia:</strong> Neustále sa učíme a využívame nové technológie.</li>
+        <li><strong>Spolupráca:</strong> Tímová práca a komunikácia.</li>
+        <li><strong>Kvalita:</strong> Dôraz na detail a funkčnosť.</li>
+    </ul>
+</section>
+
+<section class="contact" id="kontakt">
+    <div class="contact-container">
+        <div class="map-container">
+            <h3>Kde nás nájdete</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2366.087619930652!2d20.27860857121918!3d49.05600184844753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e3ab9f316877f%3A0xacb6328ecb3f4ec4!2zU8O6a3JvbW7DoSBzdHJlZG7DoSBvZGJvcm7DoSDFoWtvbGEgKFNTT1NUQSk!5e1!3m2!1ssk!2ssk!4v1743591569242!5m2!1ssk!2ssk"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="form-wrapper">
+            <h3>Kontaktujte nás</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Meno" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Správa" required></textarea>
+                <button type="submit">Odoslať</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<a href="#" class="scroll-to-top">&#8679;</a>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollButton = document.querySelector(".scroll-to-top");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            scrollButton.classList.add("show");
+        } else {
+            scrollButton.classList.remove("show");
+        }
+    });
+});
+</script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Členovia tímu</h3>
+            <ul>
+                <li>Pavol Pemčák</li>
+                <li>Jakub Kubala</li>
+                <li>Ján Dubrovčák</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Kontakt</h3>
+            <ul>
+                <li>Email: email@portfolio.sk</li>
+                <li>Telefón: +421 900 123 456</li>
+                <li>Adresa: Poprad, Slovensko</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 DocuMind</div>
+</footer>
+
+</body>
+</html>

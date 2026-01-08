@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O aplikácii – DocuMind</title>
+    <link rel="stylesheet" href="css/o-aplikacii.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="logo">
+        <span>DocuMind</span>
+    </div>
+    <nav class="menu">
+        <a href="index.html">Domov</a>
+        <a href="o-aplikacii.html" class="active">O aplikácii</a>
+        <a href="funkcie.html">Funkcie</a>
+        <a href="tym.html">O nás</a>
+        <a href="stiahnutie.html">Stiahnutie</a>
+    </nav>
+</header>
+
+<!-- ===== INTRO ===== -->
+<section class="intro">
+    <h1>O aplikácii DocuMind</h1>
+    <p>
+        DocuMind je študentský projekt na správu dokumentov s využitím umelé inteligencie. 
+        Aplikácia umožňuje nahrávať dokumenty, prevádzať ich na text pomocou OCR a ukladať dôležité poznámky.
+        Podrobnosti o tom, ako funguje backend a frontend, nájdete nižšie.
+    </p>
+</section>
+
+<!-- ===== BACKEND ===== -->
+<section class="projects">
+    <h2 class="section-title">Backend – Python (FastAPI)</h2>
+    <div class="project-grid">
+
+        <div class="project">
+            <div class="project-image">
+                <img src="resources/images/python.jpg" alt="Python">
+            </div>
+            <div class="project-info">
+                <h3>FastAPI</h3>
+                <p>
+                    Webový framework v Pythone, ktorý spracováva logiku aplikácie, databázu a vytvára API endpointy. 
+                    Backend komunikuje s frontendom cez HTTP volania.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-image">
+                <img src="resources/images/unicorn.jpg" alt="Uvicorn">
+            </div>
+            <div class="project-info">
+                <h3>Uvicorn</h3>
+                <p>
+                    Server pre FastAPI. Spúšťa backend a zabezpečuje, že API je dostupné pre frontend a aplikáciu.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-image">
+                <img src="resources/images/tesseract.png" alt="Tesseract OCR">
+            </div>
+            <div class="project-info">
+                <h3>Tesseract OCR</h3>
+                <p>
+                    Knižnica na rozpoznávanie textu z obrázkov. Používame ju na prevod faktúr, poznámok a dokumentov do čistého textu.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-image">
+                <img src="resources/images/sqlite.jpg" alt="SQLite">
+            </div>
+            <div class="project-info">
+                <h3>SQLite (lifedocs.db)</h3>
+                <p>
+                    Jednoduchá databáza, ideálna pre školský projekt. Ukladáme názov súboru, text z OCR, poznámky a dátum vytvorenia.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-image">
+                <img src="resources/images/sqlalchemy.png" alt="SQLAlchemy">
+            </div>
+            <div class="project-info">
+                <h3>SQLAlchemy</h3>
+                <p>
+                    ORM knižnica pre prácu s databázou ako s objektami, zjednodušuje manipuláciu s dátami.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== FRONTEND ===== -->
+<section class="projects">
+    <h2 class="section-title">Frontend – React / React Native</h2>
+    <div class="project-grid">
+
+        <div class="project">
+            <div class="project-image">
+                <img src="resources/images/react.png" alt="React">
+            </div>
+            <div class="project-info">
+                <h3>React / React Native</h3>
+                <p>
+                    Zobrazuje používateľské rozhranie (UI), umožňuje nahrať súbor, zobraziť text a uložiť dokument.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-image">
+                <img src="resources/images/api.jpg" alt="Fetch / API volania">
+            </div>
+            <div class="project-info">
+                <h3>Fetch / API volania</h3>
+                <p>
+                    Frontend komunikuje s backendom cez HTTP a posiela JSON dáta. Zabezpečuje správnu synchronizáciu dát.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>DocuMind</h3>
+            <ul>
+                <li>Študentský projekt</li>
+                <li>Správa dokumentov</li>
+                <li>Umelá inteligencia</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Kontakt</h3>
+            <ul>
+                <li>Email: info@documind.sk</li>
+                <li>Poprad, Slovensko</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 DocuMind
+    </div>
+</footer>
+
+</body>
+</html>
